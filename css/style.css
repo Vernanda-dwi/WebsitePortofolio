@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    color: black;
+
+}   
+
+/*
+* menu
+*/
+nav {
+    background-color: #A6E3E9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+nav > .wrapper {
+    display: flex ;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu  {
+    width:  50%;
+    
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+.logo >img {
+    height: 45px;
+}
+
+/*
+* Hero / jumbotron
+*/
+header {
+background: url("../images/panaromic.jpg");
+height: 100vh;
+background-position: center center;
+background-size: cover;
+background-repeat: no repeat;
+position: relative;
+font-family: "Kanit", sans-serif;
+letter-spacing: 2px;
+text-shadow: 0 0 10px #000;
+
+}
+.header-opacity {
+    background-color: #A6E3E9;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    color: orange;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}  
+.header-jumbotron > h5 {
+    color: floralwhite; 
+    margin: 0px;
+    padding: 5px;
+    font-size: 3rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron > p {
+    padding: 5px;
+    margin: opx 5px 20px 5px;
+    color: #fff;
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+   background-color: orange; 
+   padding: 5px 10px 0px 10px;
+   border-radius: 10px;
+}
+
+/*
+* statistic
+*/
+#statistic {
+    background-color: #15F5BA;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+}
+
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    }
+    
+#statistic > .wrapper > div {
+    border: 1px solid;
+    text-align: center;
+} 
+
+#statistic > .wrapper > div > p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin: 10px;
+    font-size: 3.5rem;
+
+
+}
+
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
+}
+
+/*
+* portofolio project
+*/
+#portofolio-project {
+    background-color: #A6E3E9 ;
+    color: white;
+}
+
+#portofolio-project > .wrapper {
+    padding: 50px;
+
+}
+
+#portofolio-project > .wrapper > h4{
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+#portofolio-project > .wrapper > h4 > span {
+    color: orange;
+}
+
+#portofolio-project > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;  
+    margin-bottom: 50px;
+
+}   
+
+
+.grid {
+    display: grid; 
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+.grid > .item {
+    border: 1px solid #666;
+    background-color: #15F5BA;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid > .item > img {
+    width: 15%;
+    position: absolute;
+    top: 10px ;
+    right: 10px;
+}
+
+.grid > .item > .item-detail {
+   padding: 30px;
+   font-size: 1.3rem;
+   font-weight: bold;
+   width: 70%;
+}
+
+.grid > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid > .item > .item-detail > div > small {
+    color: blue;
+    font-size: 1rem;
+    font-style: italic ;
+}
+
+.grid > .item > .item-detail > div > a {
+    font-size: 1rem;
+    color: #333;
+}
+
+/*
+* tentang saya
+*/
+
+#tentang-saya {
+    background-color: #EEEEEE ;
+    color: #333;
+}
+
+#tentang-saya > .wrapper {
+    padding: 50px 0px 50px 0px;
+
+}
+
+#tentang-saya > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+
+#tentang-saya > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;  
+    margin-bottom: 50px;
+
+}
+
+#tentang-saya > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid; 
+
+}
+
+#tentang-saya > .wrapper > div > .foto {
+    width: 20%;
+}
+
+#tentang-saya > .wrapper > div > .foto > img{
+    max-width: 100%;
+}
+
+#tentang-saya > .wrapper > div > .desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#tentang-saya > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .social  {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    
+}
+
+#tentang-saya > .wrapper > div > .desc > .social > a {
+    color: #59D5E0;
+
+}
+
+/*
+* pelatihan-sertifikasi
+*/
+
+
+
+#pelatihan-sertifikasi {
+    background-color: #A6E3E9 ;
+    color: #fff;
+}
+
+#pelatihan-sertifikasi > .wrapper {
+    padding: 50px;
+
+}
+
+#pelatihan-sertifikasi > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+#pelatihan-sertifikasi> .wrapper > h4 > span {
+    color: orange;
+}
+
+#pelatihan-sertifikasi > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;  
+    margin-bottom: 50px;
+
+}   
+
+#pelatihan-sertifikasi > .wrapper > .grid > .item {
+    background-color: #A6E3E9;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#pelatihan-sertifikasi > .wrapper > .grid > .item > .item-detail {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+#pelatihan-sertifikasi > .wrapper > .grid > .item > .item-detail > .img {
+ width: 100%;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+
+}
+
+#pelatihan-sertifikasi > .wrapper > .grid > .item > .item-detail > .div {
+    padding: 10px 20px 10px;
+}
+
+/*
+* copyright
+*/
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+
+*/
+* hamburger-menu
+*/
+button.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+button.hamburger-menu > i {
+    color: black;
+    font-size: 1.5rem  ;
+}
+
+button.hamburger-menu > i.icon-close {
+    display: none;
+}
+
+
+
+/*
+* 1024, 900, 768, 600, 450
+*/
+@media only screen and (max-width: 1024px) {
+   .wrapper {
+    width: 90%;
+   }  
+}
+
+@media only screen and (max-width: 900px) {
+    #statistic > .wrapper > div > p {
+        font-size: 2.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+     
+
+    
+    #statistic > .wrapper > div > p > i  {
+        font-size: 2.5rem;
+}
+    #statistic > .wrapper > div > small {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45% ;
+    }
+    .item > img {
+        width: 8%;
+    }
+}
+
+    @media only screen and (max-width: 768px) {
+        .menu {
+            width: 60%;
+        }
+        .header-jumbotron > h4 {
+            font-size: 1.3rem;
+        }
+        .header-jumbotron >h5 {
+            font-size: 2rem;
+            line-height: 2.2rem;
+        }
+        .header-jumbotron > p {
+            font-size: 0.8rem;
+        }
+    
+
+.button {
+    padding: 5px;
+}
+.button-x1 {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#statistic .wrapper > div > p {
+    font-size: 1.5rem;
+    margin: 0px;
+}
+ 
+#statistic > .wrapper > div > p > i  {
+    font-size: 1.5rem;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 100%;
+    }
+
+  #statictic >.wrapper {
+    padding: 10px;
+    flex-direction: column;
+    
+
+    }
+#statistic > .wrapper > .div {
+    display: flex;
+    
+
+    }
+
+#statistic >.wrapper > div > small {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    }   
+
+
+    #tentang-saya > .wrapper > div {
+    width: 100%;
+    flex-direction: column;
+    }
+    #tentang-saya > .wrapper > .div > .foto {
+        width: 50%;
+    }
+
+    #tentang-saya > .wrapper > .div > .foto > img {
+        max-width: 100%;
+    }
+
+    #tentang-saya > .wrapper > .div > .desc {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+        
+    }
+
+    #tentang-saya > .wrapper > .div > .desc > .social {
+        margin: auto;
+    }
+
+    button.hamburger-menu {
+        display: inline;
+    }
+
+    .menu {
+        display: none;        
+    }
+    .tampil > ul {
+        display: inline;
+    }
+
+    .tampil > ul {
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        left: 0;
+    }
+    
+    .tampil > ul  > li {
+        padding: 10px 20px 10px;
+    }
+
+
+} 
