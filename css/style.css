@@ -60,7 +60,7 @@ nav > .wrapper {
 * Hero / jumbotron
 */
 header {
-  background: url("../images/header.jpg");
+  background: url("../images/walpaper1.jpg");
   height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -130,7 +130,7 @@ a {
 * statistic
 */
 #statistic {
-  background-color: #15f5ba;
+  background: url("../images/walpaper1.jpg");
   color: #fff;
   font-family: "Kanit", sans-serif;
 }
@@ -167,7 +167,7 @@ a {
 * portofolio project
 */
 #portofolio-project {
-  background-color: #a6e3e9;
+  background: url("../images/walpaper1.jpg");
   color: white;
 }
 
@@ -243,7 +243,7 @@ a {
 */
 
 #tentang-saya {
-  background-color: #eeeeee;
+  background: url("../images/walpaper1.jpg");
   color: #333;
 }
 
